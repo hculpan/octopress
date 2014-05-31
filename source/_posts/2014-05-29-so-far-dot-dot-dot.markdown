@@ -1,0 +1,19 @@
+---
+layout: post
+title: "So far..."
+date: 2014-05-29 22:02:01 -0400
+comments: true
+categories: 
+- Raspberry Pi
+- Arduino
+- Electronics
+---
+So this is my first blog post.  In late April I decided to start playing around with the Raspberry Pi.  I'm not really sure why I decided to do so, and I didn't really have a clear project in mind.  I had a vague idea of doing a temperature gauge that would check the temperature in my room and store this...somewhere, along with the local temperature so that I could track how my room's temperature differed from the rest of the house based on the local weather conditions.  But, honestly, I didn't really think it through that much.  I just started reading [Raspberry Pi User Guide](http://www.amazon.com/gp/product/B00HR38R8A/ref=oh_d__o07_details_o07__i00?ie=UTF8&psc=1) and, when I received my first Raspberry Pi (included in the [CanaKit Raspberry Pi Ultimate Starter Kit](http://www.amazon.com/gp/product/B00G1PNG54/ref=oh_details_o09_s00_i01?ie=UTF8&psc=1)), I started futzing around with it.  It was cool, and having a little but very functional Linux computer intrigued me (I haven't really done much with Linux since switching to Mac 6 or 7 years ago), but honestly it didn't grab me.  I can't really explain why.  I did some stuff with it, made an LED blink, that kind of basic stuff, but I was really much more into Minecraft than the Pi.  In fact, I didn't even bother ordering the temperature sensor until three weeks later - obviously something you'd need for the project I was still planning on doing.
+
+I'm not sure why, but at the same time I ordered the temperature sensor, I ordered an Arduino ([Starter Kit for Newsite Uno R3](http://www.amazon.com/gp/product/B0051QHPJM/ref=oh_details_o03_s00_i01?ie=UTF8&psc=1)).  I didn't even start playing with it right away.  After all, the Raspberry Pi was a real computer, and I'm a programmer not a hardware guy.  So why bother with such an underpowered computer?  Several days later, though, when I found myself stymied by the Pi's lack of native analog inputs for the sensor, I started playing around with the Arduino.  My initial goal was just to use the Arduino's analog inputs and slave it to the Pi, but it didn't take too long until I was *hooked*.
+
+So now I've been spending all my time with the Arduino instead of the Raspberry Pi.  To be fair, part of that is because of the very excellect book, [Arduino Workshop](http://www.amazon.com/gp/product/B00CLHK0OQ/ref=oh_d__o03_details_o03__i00?ie=UTF8&psc=1).  I've always had an interest in electronics, but everytime I've tried playing with them in the past I kind of get frustrated and stop.  But the combination of electronics with a microntroller seems to be just the thing I was looking for.  And the [Arduino Workshop](http://www.amazon.com/gp/product/B00CLHK0OQ/ref=oh_d__o03_details_o03__i00?ie=UTF8&psc=1) fit that perfectly, because it used the Arduino to teach electronics.  
+
+This doesn't mean I've given up on the Rapsberry Pi, btw.  In fact, I just ordered a [prototype plate kit](http://www.amazon.com/gp/product/B00C45UHQ6/ref=oh_details_o00_s00_i02?ie=UTF8&psc=1) because I want to go ahead and finish my temperature gauge project and I think I can knock it out reasonably quickly, given the excellent tutorials that are out there.  My plan is to have it record the temperature hourly and update a Google Docs spreadsheet.  Again, nice tutorials should make this pretty easy.
+
+But after that, I'm back to the Arduino for the project I really want to do: A digital dice roller for gamers, allowing them to roll a d4, d6, d8, d10, d12, d20, or d100.
