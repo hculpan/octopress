@@ -11,7 +11,7 @@ So, as I indicated in my prior post, I'm going to build an Arduino on a breadboa
 
 {% img right /images/power_supply.jpg %}
 
-This power supply can take up to 25V and will reduce it to 5V output.  The LM7805 [datasheet](http://www.addicore.com/Addicore-L7805CV-5V-Voltage-Regulators-5-pieces-p/114.htm) says it can handle 1.5A, but someone mentioned that anything over 1A will cause it to overheat without a heat sink.  Fortunately the power supply I'm using (a Trisonic universal AC/DC power supply) only puts only 1A.  As per the tutorial, I also added a green LED to indicate when the power is connected.  I also verified with my multimeter that the output is 5V.  So the circuit appears to be working as intended.
+This power supply can take up to 25V and will reduce it to 5V output.  The LM7805 [datasheet](http://www.addicore.com/Addicore-L7805CV-5V-Voltage-Regulators-5-pieces-p/114.htm) says it can handle 1.5A, but someone mentioned that anything over 1A will cause it to overheat without a heat sink.  Fortunately the power supply I'm using (a Trisonic universal AC/DC power supply) only puts only 1A.  As per the tutorial, I also added a green LED to indicate when the power is connected.  I also verified with my multimeter that the output is 5V.  So the circuit appears to be working as intended.  Btw, if you happen to notice that the wires coming from the power supply are tied to the power-in wires from the breadboard, it's because my 2.1mm barrel jack is also coming tomorrow, and I couldn't think of any other way to get the power from the power supply.  It kind of sucks because that basically renders my power supply useless after tonight, but c'est la vie.  
 
 To build this, I used:
 
@@ -20,6 +20,6 @@ To build this, I used:
 *  1 200 ohm resistor
 *  1 green LED
 
-The one issue for me is that I don't really understand capacitors, so I don't really understand their purpose in this circuit.  So obviously that's something I need to read on and work through.
+One mystery for me in this circuit as I wired it up was the purpose of the capacitors.  Still being very new to electronics, I didn't know what a capacitor was for, but after a quick consultation with the Internet, I learned that they're basically like little batteries.  But that still didn't answer what they're used for in this circuit, so I turned the power off, removed the two capacitors, and turned it back on.  The light came on, just like before, so no difference there.  But when I measured the output with my multimeter, I noticed it was only 3.9V and not 5V.  As soon as I put the capacitors back, the voltage was back at an expected 5V.  So clearly even in this simple circuit, the 
 
 So hopefully tomorrow my other components will arrive and I can build my complete Arduino.  The only thing I'll be missing is a USB interface, so I can't program it the way I can my regular Arduino.  But I should be able to use my UNO to program my breadboard Arduino, which is my plan.
