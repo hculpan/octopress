@@ -14,10 +14,10 @@ So, as I indicated in my prior post, I'm going to build an Arduino on a breadboa
 This power supply can take up to 25V and will reduce it to 5V output.  The LM7805 [datasheet](http://www.addicore.com/Addicore-L7805CV-5V-Voltage-Regulators-5-pieces-p/114.htm) says it can handle 1.5A, but someone mentioned that anything over 1A will cause it to overheat without a heat sink.  Fortunately the power supply I'm using (a Trisonic universal AC/DC power supply) only puts only 1A.  As per the tutorial, I also added a green LED to indicate when the power is connected.  I also verified with my multimeter that the output is 5V.  So the circuit appears to be working as intended.
 
 To build this, I used:
-+ LM7805
-+ 2 10uF capacitors
-+ 1 200 ohm resistor
-+ 1 green LED
++  LM7805
++  2 10uF capacitors
++  1 200 ohm resistor
++  1 green LED
 
 The one issue for me is that I don't really understand capacitors, so I don't really understand their purpose in this circuit.  So obviously that's something I need to read on and work through.
 
