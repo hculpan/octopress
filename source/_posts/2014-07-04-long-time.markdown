@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Long time, no blog"
+date: 2014-07-04 23:18:18 -0400
+comments: true
+categories: 
+- electronics
+- digital
+---
+So it's been a while since my last post.  I've been very busy both with work and family, and in the little free time that I've had I honestly just haven't had the energy to do much electronic futzing - or much of anything really.  But for the 4th I've gotten a good bit of time to myself, so I've started playing around with some stuff I've really been wanting to look at.
+
+{% img right /images/long_time.jpg %}
+
+About two weeks ago I ordered a grab bag of TTL chips from Jameco.  It cost me $10 and I don't really think it was worth it given how few useful chips I got out of it, but at least I did get a few chips I can use.  One is the 74S00N you see in the picture, a quad 2-input NAND gate.  I know it's not easy to make out, but it is the IC to the right of the dimmer blue light.
+
+A NAND gate is the most useful of the logic gates, because it can be used as the basis of all the other logic gates.  You could build an entire CPU using nothing but NAND gates if you so desired, though of course that would be a lot of NAND gates.  Obviously you wouldn't want to, but the grab bag I got didn't include any other logic gates (lots of multiplexers, demultiplexers, flip-flops, inverters, and the like), and it only had one of the 00 chips.  (For those not knowledgeable, the number after the S indicates what type of chip it is, whether its a gate, a multiplexer, inverter, etc.  00 is a NAND gate.  I also got an 03 and 10, both of which are also NAND gates, though with different properties that I honestly don't understand at the moment.)
+
+This is my first go at using such a chip, so I started with a pretty basic circuit.  Using the voltage regulator from my prior post (which I've upgraded slightly with a barrel jack to plug in power), I hooked up main power, ground, and two inputs.  I connected the output to the positive of the LED and the LED's negative to GND with a 200 ohm resister.  Not surprisingly, it worked as you'd expect - when the two inputs were set to HIGH (main power), the LED went off; when one was hooked to GND, the LED came on.
+
+So I decided to build an AND gate out of two of the NAND circuits.  Again, for those who aren't familiar with these chips, they actually have 4 NAND gates built into them, so you get 4 gates, each with 2 inputs, on the one chip.  So I connected one NAND gate to a second to create an AND gate, using the two looping wires to set input to either HIGH or LOW.  So I built a simple AND gate.
+
+I did find one surprising thing though.  When I used just a simple NAND gate, I could move the input wires from HIGH to LOW and the LED would change state without my having to turn the circuit off.  But when I used two NAND gates in sequence for my AND gate, moving the wires didn't effect the state of the LED.  I had to actually turn off the power then turn it back on for the output to be correct.  I'm not really sure why this is, so it's something I'll have to think about.  I plan to get more TTL chips to play around more extensively with logic gates.
